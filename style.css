@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem 1rem;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f0efeb; /* softer background for contrast */
+}
+
+main {
+    margin-top: 1.5rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #FAF9F6;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.note {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #7c7c7c;
+}
+
+footer p {
+    margin: 0.2rem;
+}
+
+img.profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1.5rem;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-info h1, .header-info h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.header-info .email {
+    color: #555;
+    margin-top: 0.3rem;
+    text-decoration: none;
+}
+
+.header-info .email:hover {
+    text-decoration: underline;
+}
+
+nav.social {
+    margin-top: 0.7rem;
+}
+
+nav.social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+main {
+    margin-top: 1.5rem;
+}
+
+.competition {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;                  /* fill container */
+    max-width: 100%;              /* prevent overflow */
+    box-sizing: border-box;
+}
+
+
+/* Image column */
+.competition img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* Text column */
+.competition .comp-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0; /* allows flex shrink on small screens */
+}
+
+/* Optional: improve spacing inside text block */
+.competition .comp-text > * {
+    margin-bottom: 1rem;
+}
+
+/* Responsive stacking */
+@media (max-width: 768px) {
+    .competition {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .competition img {
+        max-width: 100%;
+    }
+
+    .competition .comp-text {
+        width: 100%;
+    }
+}
+
+/* Stack on mobile */
+@media (max-width: 768px) {
+    section.portfolio .competition {
+        flex-direction: column;
+    }
+
+    .competition img {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img.profile {
+        margin: 0 auto 1rem auto;
+    }
+
+    .header-info {
+        align-items: center;
+    }
+
+    nav.social {
+        justify-content: center;
+    }
+}
