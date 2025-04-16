@@ -1,6 +1,6 @@
 ## Experience
 - **Research Scientist AI/ML**, IRLAB Therapeutics *(2022-present)*  
-  - Developing advanced machine learning models for CNS drug discovery
+  Developing advanced machine learning models for CNS drug discovery
 - **Algorithm Software Developer**, Aptiv *(2021-2022)* 
 
 ## Education

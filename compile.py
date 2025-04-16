@@ -60,4 +60,4 @@ def compile_markdown(md_path, template_path, output_path, competitions_path):
         output_file.write(final_html)
 
 if __name__ == "__main__":
-    compile_markdown('index.md', 'template.html', 'index.html', 'competitions')
+    compile_markdown('resume.md', 'template.html', 'index.html', 'competitions')

@@ -89,7 +89,7 @@ main {
 
 .competition {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
     margin-bottom: 2rem;
     width: 100%;                  /* fill container */
@@ -118,6 +118,10 @@ main {
 /* Optional: improve spacing inside text block */
 .competition .comp-text > * {
     margin-bottom: 1rem;
+}
+
+.competition .comp-text p {
+    margin-top: 0;
 }
 
 /* Responsive stacking */
